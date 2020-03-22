@@ -14,14 +14,12 @@ class MovieTableRow extends Component {
                         <button
                             className="btn btn-primary mx-1"
                             onClick={() => this.props.watchedMovies(movie)}
-
                         >
                             {movie.watched ? "Unwatch" : "Watched"}
                         </button>
                         <button
                             className="btn btn-info mx-1"
                             onClick={() => this.props.deletedMovie(movie)}
-
                         >
                             Delete
             </button>

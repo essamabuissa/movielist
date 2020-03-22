@@ -1,4 +1,5 @@
-import { ADD_MOVIE, WATCHED_MOVIE, DELETED_MOVIE } from "./actionTypes"
+import { ADD_MOVIE, WATCHED_MOVIE, DELETED_MOVIE, POST_FORM } from "./actionTypes"
+import axios from "axios";
 
 export const addMovie = title => {
     const newMovie = {
@@ -28,4 +29,18 @@ export const deletedMovie = movie => {
         payload: movie
 
     }
+}
+
+export const postForm = data => async (userData, dispatch) => {
+    try {
+        const response = await axios.post("https://api/form-submit-url", userData);
+        const data = response.data;
+        dispatch({ type: POST_FORM, payload: data })
+
+    }
+    catch (error) {
+        console.error(error.response)
+    }
+
+
 }

@@ -1,4 +1,4 @@
-import { ADD_MOVIE, WATCHED_MOVIE, DELETED_MOVIE } from "../actions/actionTypes"
+import { ADD_MOVIE, WATCHED_MOVIE, DELETED_MOVIE, POST_FORM } from "../actions/actionTypes"
 
 const intialState = {
     movies: [
@@ -28,7 +28,8 @@ const intialState = {
         },
 
 
-    ]
+    ],
+    data: ""
 }
 
 const reducer = (state = intialState, action) => {
@@ -49,6 +50,12 @@ const reducer = (state = intialState, action) => {
                 ...state,
                 movies: state.movies.filter(movie => movie !== action.payload)
 
+            }
+
+        case POST_FORM:
+            return {
+                ...state,
+                data: action.payload
             }
 
         default:

@@ -45,7 +45,7 @@ class AddMovie extends Component {
                     />
                     <div className="input-group-append">
                         <button
-                            className="btn btn-info"
+                            className="btn btn-primary"
                             type="button"
                             id="add-button"
                             onClick={this.submitMovie}

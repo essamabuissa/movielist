@@ -52,7 +52,9 @@ class MovieList extends Component {
                 <div className="card">
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item p-0">
-                            <SearchBar handleChange={this.handleSearchBar} />
+                            <SearchBar
+                                handleChange={this.handleSearchBar}
+                            />
                         </li>
                         {movieRow}
                     </ul>
