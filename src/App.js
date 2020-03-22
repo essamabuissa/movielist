@@ -5,14 +5,16 @@ import MovieList from './MovieList';
 
 function App() {
   return (
-    <div className="container">
-      <AddMovie />
+    <div className="body">
+      <div className="container">
+        <AddMovie />
 
-      <div className="row">
-        <MovieList watched />
-        <MovieList />
+        <div className="row">
+          <MovieList watched />
+          <MovieList />
+        </div>
+
       </div>
-
     </div>
   );
 }

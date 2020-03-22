@@ -9,7 +9,25 @@ const intialState = {
         {
             title: "Focus",
             watched: false
-        }
+        },
+        {
+            title: "Bad Boys",
+            watched: false
+        },
+        {
+            title: "The Hangover",
+            watched: false
+        },
+        {
+            title: "Joker",
+            watched: false
+        },
+        {
+            title: "The Godfather",
+            watched: false
+        },
+
+
     ]
 }
 

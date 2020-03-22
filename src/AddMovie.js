@@ -50,7 +50,7 @@ class AddMovie extends Component {
                             id="add-button"
                             onClick={this.submitMovie}
                         >
-                            + Add
+                            Add
                 </button>
                     </div>
                 </div>
